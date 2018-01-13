@@ -44,3 +44,11 @@ ul .delete {
   font-weight: bold;
   text-shadow: 1px 1px white;
 }
+
+.spanHide{
+display: none;
+}
+
+.spanShow{
+display: block;
+}

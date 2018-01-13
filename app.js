@@ -1,27 +1,28 @@
-$('.list').on('click', 'span', function(){
-	// $(this).appendTo('.done');
-	$('li:last').remove()
+//
+// $('.todo').on('click', 'li', function(){
+// $(this).appendTo('.done');
+//
+// 	$('.done').on('click', 'li', function(){
+// 		$(this).appendTo('.todo');
+// 	});
+//
+// 	$('.ul').on('click', '.delete', function(e){
+// 		e.stopPropagation[]
+// 		$(this).parent().remove()
+// 	});
+// });
 
-});
 
-$('.list').on('click', 'li', function(){
-	$(this).appendTo('.done');
-
+$('.delete').on('click', function(e){
+	$(this).closest("li").remove()
 	console.log(this)
 });
 
-	// $('span').on('click', function(){
-	// 	$('li').remove()
-	// })
+$('.todo').on('click', 'li', function(){
+$(this).appendTo('.done');
 
+	$('.done').on('click', 'li', function(){
+		$(this).appendTo('.todo');
+	});
 
-  // $('.list').on('click', 'li .delete', function(){
-  //   $(this).remove();
-  // })
-
-//
-// $('#lista').on('click', 'span', function(){
-// 			var input = ($('input:text[name=nombre]').val());
-// 			$(this).remove();
-// 			console.log(this)
-// 		});
+});
